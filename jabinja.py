@@ -31,17 +31,17 @@ driver.execute_script("arguments[0].click();", checkbox_location)
 checkbox_job = driver.find_element(By.XPATH, "//input[@name='filters[job_categories][1]']")
 driver.execute_script("arguments[0].click();", checkbox_job)
 
-checkbox_job_type = driver.find_element(By.XPATH, "//input[@value='1']")
-driver.execute_script("arguments[0].click();", checkbox_job_type)
+# checkbox_job_type = driver.find_element(By.XPATH, "//input[@value='1']")
+# driver.execute_script("arguments[0].click();", checkbox_job_type)
 
-checkbox_job_type = driver.find_element(By.XPATH, "//input[@value='is_parttime']")
-driver.execute_script("arguments[0].click();", checkbox_job_type)
+# checkbox_job_type = driver.find_element(By.XPATH, "//input[@value='is_parttime']")
+# driver.execute_script("arguments[0].click();", checkbox_job_type)
 
-checkbox_w_e = driver.find_element(By.XPATH, "//input[@value='under_two']")
-driver.execute_script("arguments[0].click();", checkbox_w_e)
+# checkbox_w_e = driver.find_element(By.XPATH, "//input[@value='under_two']")
+# driver.execute_script("arguments[0].click();", checkbox_w_e)
 
-checkbox_w_e = driver.find_element(By.XPATH, "//input[@value='any']")
-driver.execute_script("arguments[0].click();", checkbox_w_e)
+# checkbox_w_e = driver.find_element(By.XPATH, "//input[@value='any']")
+# driver.execute_script("arguments[0].click();", checkbox_w_e)
 
 time.sleep(5)
 
