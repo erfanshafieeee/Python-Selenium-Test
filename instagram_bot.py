@@ -41,6 +41,10 @@ class InstagramBot:
             for j in range(num):
                 link = self.driver.find_elements(By.TAG_NAME , 'a')
                 link_2 = [l.get_attribute('herf') for l in link if 'com/p/' in l.get_attribute('herf')]
+                for i in range(len(link_2)):
+                    self.driver.get(link_2[i])
+                    self.driver.find_element(By.CLASS_NAME , 'wp0fb') . click()
+                    time.sleep(random.randint(1 , 6))
 
 
 user = 'erfan'
@@ -48,3 +52,4 @@ passwordd = '12345'
 
 test = InstagramBot(user ,passwordd)
 test.login()
+test.Like('python , linux')
