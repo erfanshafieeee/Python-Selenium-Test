@@ -39,7 +39,7 @@ class InstagramBot:
             link_2 = []
 
             for j in range(num):
-                link = self.driver.find_element(By.TAG_NAME , 'a')
+                link = self.driver.find_elements(By.TAG_NAME , 'a')
                 link_2 = [l.get_attribute('herf') for l in link if 'com/p/' in l.get_attribute('herf')]
 
 
