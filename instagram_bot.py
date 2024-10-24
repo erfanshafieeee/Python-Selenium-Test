@@ -30,6 +30,19 @@ class InstagramBot:
         time.sleep(3000)
         self.driver.get('https://instagram.com/selenium_ww/')
 
+
+
+    def like(self , hs, num):
+        hashtag = hs.split(',')
+        for i in range(len(hashtag)):
+            self.driver.get(f'https://instagram.com/explore/tags/{hashtag[i]}')
+            link_2 = []
+
+            for j in range(num):
+                link = self.driver.find_element(By.TAG_NAME , 'a')
+                link_2 = [l.get_attribute('herf') for l in link if 'com/p/' in l.get_attribute('herf')]
+
+
 user = 'erfan'
 passwordd = '12345'
 
