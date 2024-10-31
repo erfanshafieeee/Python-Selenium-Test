@@ -28,7 +28,7 @@ class InstagramBot:
 
         self.driver.find_element(By.XPATH , '//button[@type="submit"]').click()
         time.sleep(3000)
-        self.driver.get('https://instagram.com/selenium_ww/')
+        #self.driver.get('https://instagram.com/selenium_ww/')
 
 
 
@@ -47,8 +47,8 @@ class InstagramBot:
                     time.sleep(random.randint(1 , 6))
 
 
-user = 'erfan'
-passwordd = '12345'
+user = 'erfanyofski'
+passwordd = 'erfan5183'
 
 test = InstagramBot(user ,passwordd)
 test.login()
