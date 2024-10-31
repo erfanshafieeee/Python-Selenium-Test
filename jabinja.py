@@ -83,3 +83,4 @@ for i in range(len(job_list)):
 # پیمایش تمام شد، حالا مرورگر در صفحه اصلی باقی می‌ماند
 print("All jobs have been visited. Staying on the main page.")
 input()
+
