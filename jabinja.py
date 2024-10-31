@@ -60,6 +60,19 @@ for i in range(len(job_list)):
         
         # رفتن به صفحه آگهی
         driver.get(job_link)
+
+        current_position = 0
+        target_position = 2000
+        scroll_step = 50  # میزان اسکرول در هر مرحله
+        delay = 0.05  # مکث بین هر مرحله به ثانیه
+
+        while current_position < target_position:
+            driver.execute_script(f'window.scrollTo(0, {current_position});')
+            current_position += scroll_step
+            time.sleep(delay)
+
+        # مطمئن شوید که در نهایت به مکان هدف رسیده‌اید
+        driver.execute_script(f'window.scrollTo(0, {target_position});')
         
         # اینجا می‌توانید کد اضافی برای استخراج اطلاعات صفحه آگهی بگذارید
         print(f"Visiting job: {job_link}")
