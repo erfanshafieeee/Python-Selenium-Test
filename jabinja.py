@@ -14,7 +14,7 @@ log_user.send_keys('erfanshafieeee@gmail.com')
 log_pass = driver.find_element(By.NAME, 'password')
 log_pass.send_keys('erfan5183')
 
-log_enter = driver.find_element(By.CSS_SELECTOR, "[value='وارد شوید']")
+log_enter = driver.find_element(By.XPATH, "//input[@type='submit']")
 log_enter.click()
 
 
