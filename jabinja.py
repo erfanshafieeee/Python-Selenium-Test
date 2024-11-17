@@ -5,14 +5,15 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 driver = webdriver.Chrome()
-driver.get('https://jobinja.ir/login/user')
+driver.get('https://jobinja.ir/login/user
 
+name = input("enter your user name : ")
+password = input("enter your password : ")
 
 log_user = driver.find_element(By.NAME, 'identifier')
-log_user.send_keys('erfanshafieeee@gmail.com')
-
+log_user.send_keys(name)
 log_pass = driver.find_element(By.NAME, 'password')
-log_pass.send_keys('erfan5183')
+log_pass.send_keys(password)
 
 log_enter = driver.find_element(By.XPATH, "//input[@type='submit']")
 log_enter.click()
